@@ -1,0 +1,99 @@
+.navButton{
+    width: 130px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgb(212, 217, 228) 0%,rgb(147, 145, 153) 100%);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid rgb(100, 104, 100);
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    word-spacing: 2px;
+    font-size: 15px;
+    text-align: center;
+    text-indent: 5px;
+    cursor: pointer;
+  }
+  
+  .navButton:hover
+  {
+      transform: translateY(-5px);
+  }
+
+  #btn 
+  {
+      float: right;
+      right: 30px;
+  }
+
+  .DevInfo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 20px 35px 0px 35px;
+    line-height: 20px;
+    background-image: linear-gradient(rgba(233, 233, 233, 0.8),rgba(117, 117, 117, 0.8)),url(banner.jfif);
+    background-size: cover;
+    grid-area: aut;
+    text-align: justify;
+}
+
+.DevBio{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 35px 35px 35px;
+    line-height: 20px;
+    background-color:rgb(57, 78, 97);
+    color: #EEEEEF;
+    grid-area: autbio;
+    text-align: justify;
+}
+
+.DevPicture{
+    padding-right: 10px;
+}
+
+.DevPicture img{
+    height: 200px;
+    filter: grayscale(.5);
+}
+
+.DevDetails{
+    line-height: 10px;
+    padding-left: 20px;
+    /* font-size: 2em; */
+}
+
+.DevBio li{
+    list-style-type: square;
+}
+  
+/*-------------Responsive------------*/
+  
+@media (max-device-width: 900px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        align-content: center;
+        justify-content: center;
+    }
+    .postHeader img{
+        width: 400px;
+    }
+    .blogImage{
+        height: 480px;
+    }
+    .DevDetails{
+        font-size: 32px;
+    }
+    .DevBio{
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    .post{
+        font-size: 0.7em;
+    }
+    
+}

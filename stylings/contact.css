@@ -1,0 +1,113 @@
+@import "../stylings/main.css";
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft" ;
+}
+/*------------ Header/Blog Title-------- */
+.header {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    background-position: bottom;
+   
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    color: white;
+    background: black;
+    width: 10em;
+}
+
+/*------Navigation Bar-----*/
+.nav {
+    margin: auto;
+    padding-left: 60px;
+    background: #89a729;
+    box-shadow: 0 4px 5px 0 rgba(42, 71, 52, 0.5);
+    border-radius: 20px;
+    grid-area: hd;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: left;
+    margin-right: 2em;
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    color: white;
+    text-decoration: none;
+   
+}
+
+.nav-list a:hover {
+    background: #49703a;
+    color: rgb(225, 230, 230);
+}
+
+
+
+/* Style the form element with a border around it */
+form {
+    margin: 30px 0;
+    grid-area: main;
+background-image: url(../images/banner2.jpg);
+background-size: cover;
+  }
+  
+  /*------------Add some padding and a grey background color to containers------------------*/
+  .container {
+    padding: 30px;
+    margin: 10px
+
+  }
+  .container h2{
+    text-shadow: 0 0 15px #ffffff;
+  }
+  
+  /*------------Style the input elements and the submit button------------- */
+  input[type=text], input[type=submit] {
+    width: 80%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #103955;
+    color: white;
+    border: none;
+    width: 200px;
+    justify-content: center;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  footer{
+      grid-area: ft;
+  }
