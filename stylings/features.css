@@ -86,7 +86,8 @@
         height: 480px;
     }
     .DevDetails{
-        font-size: 32px;
+        font-size: 1em;
+        line-height: 1.4em;
     }
     .DevBio{
         font-size: 1em;
@@ -95,5 +96,7 @@
     .post{
         font-size: 0.7em;
     }
-    
+    .blogImage{
+        width:30%; 
+    }
 }
