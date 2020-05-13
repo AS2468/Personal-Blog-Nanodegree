@@ -97,9 +97,9 @@
         font-size: 0.7em;
     }
     .blogImage{
-        width: 100%; 
+        width: 90vw; 
     }
     footer{
-        width: 20vw;
+        width: 100vw;
     }
 }
